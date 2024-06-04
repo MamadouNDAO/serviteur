@@ -1,0 +1,160 @@
+
+<ion-content [fullscreen]="true">
+  <div class="contain-top">
+    <ion-icon (click)="onStart()" *ngIf="isCashin || isCashout" class="icon-back-white" name="arrow-back"></ion-icon>
+    <div class="top-info">
+      <div class="contain-profil">
+        <img src="../../assets/cirengom.png" alt="" srcset="">
+        <span>Mamadou<br> Ndao</span>
+      </div>
+      <div class="info-status">
+        <ion-icon name="ellipse"></ion-icon>
+        <span>Disponible</span>
+      </div>
+      <ion-toggle [checked]="true" color="success" slot="end"></ion-toggle>
+    </div>
+    <!-- End top-info -->
+    
+  </div>
+   <!-- End contain-top -->
+
+  <div class="contain-center" *ngIf="isStart"> 
+    <div class="card-solde">
+      <div class="conatin-solde">
+        <span><small>F CFA</small> 56 000</span>
+        <ion-icon name="eye"></ion-icon>
+      </div>
+      <small class="maj">Dernière mise à jour: 08:230</small>
+    </div>
+    
+
+    <div class="contain-transact-opt">
+      <div class="transact-dep" (click)="onCashin()">
+        <ion-icon name="push"></ion-icon>
+        <span>Recharger</span>
+      </div>
+      <div class="transact-dep" (click)="onCashout()">
+        <ion-icon name="open"></ion-icon>
+        <span>Retirer</span>
+      </div>
+    </div>
+    
+    <div class="list-transact">
+      <div class="contain-list">
+        <div class="contain-list-left">
+          <span>Gain</span>
+          <small>28 fév, 21:08</small>
+        </div>
+        <span>3000 F</span>
+      </div>
+
+      <div class="contain-list">
+        <div class="contain-list-left">
+          <span>Gain</span>
+          <small>28 fév, 21:08</small>
+        </div>
+        <span>3000 F</span>
+      </div>
+      <div class="contain-list">
+        <div class="contain-list-left">
+          <span>Retrait</span>
+          <small>01 mars, 21:08</small>
+        </div>
+        <span>-10 000 F</span>
+      </div>
+
+      <div class="contain-list">
+        <div class="contain-list-left">
+          <span>Gain</span>
+          <small>28 fév, 21:08</small>
+        </div>
+        <span>3000 F</span>
+      </div>
+
+      <div class="contain-list">
+        <div class="contain-list-left">
+          <span>Gain</span>
+          <small>28 fév, 21:08</small>
+        </div>
+        <span>3000 F</span>
+      </div>
+
+      <div class="contain-list">
+        <div class="contain-list-left">
+          <span>Gain</span>
+          <small>28 fév, 21:08</small>
+        </div>
+        <span>3000 F</span>
+      </div>
+
+      <div class="contain-list">
+        <div class="contain-list-left">
+          <span>Gain</span>
+          <small>28 fév, 21:08</small>
+        </div>
+        <span>3000 F</span>
+      </div>
+    </div>
+
+   </div>
+
+
+   <div class="contain-center" *ngIf="isCashin">
+    <div class="contain-transact-opt">
+      <div class="transact-dep active">
+        <ion-icon name="push"></ion-icon>
+        <span>Recharger</span>
+      </div>
+      <div class="transact-dep">
+        <ion-icon name="open"></ion-icon>
+        <span>Retirer</span>
+      </div>
+    </div>
+    
+    <ion-radio-group value="wave" >
+      <div class="ion-opt">
+        <div class="ion-opt-grp">
+          <img src="../../assets/icon/free-money.png" alt="" srcset="">
+          <ion-label>Free Money</ion-label>
+        </div>
+        <ion-radio value="free"></ion-radio>
+      </div>
+      <div class="ion-opt">
+        <div class="ion-opt-grp">
+          <img src="../../assets/icon/om.jpg" alt="" srcset="">
+          <ion-label>Orange Money</ion-label>
+        </div>
+        <ion-radio value="orange"></ion-radio>
+      </div>
+      
+      <div class="ion-opt">
+        <div class="ion-opt-grp">
+          <img src="../../assets/icon/wave.png" alt="" srcset="">
+          <ion-label>Wave</ion-label>
+        </div>
+        <ion-radio value="wave"></ion-radio>
+      </div>
+      
+    </ion-radio-group>
+
+    <div class="opt-numero">
+      <span class="opt-title">Vous allez recharger depuis ce numéro:</span>
+      <form [formGroup]="form">
+        <div class="opt-input">
+          <div class="opt-indicatif">
+            <img src="../../assets/icon/senegal.svg" alt="" srcset="">
+            <span>+221</span>
+          </div>
+          
+            <ion-input type="text" placeholder="77 123 45 67" simpleMask="99 999 99 99" [clearIfNotMatch]="true" formControlName="phoneNumber"></ion-input>
+          
+        </div>
+        <div class="opt-montant">
+          <label for="">Montant:</label>
+          <ion-input class="opt-montant-input" type="text" placeholder="123 000 F CFA" simpleMask="999 999 999" [clearIfNotMatch]="true" formControlName="montant"></ion-input>
+        </div>
+      </form>
+    </div>
+    <button class="opt-btn">Recharger</button>
+   </div>
+</ion-content>

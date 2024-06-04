@@ -1,0 +1,21 @@
+<ion-content fullscreen="true">
+  <div class="fully">
+    <div class="content-logo">
+      <img src="../../assets/serviteur-logo.png" alt="logo-vpe" srcset="">
+    </div>
+    <div class="text-start">
+      <h1><strong></strong></h1>
+      <br>
+      <span>Veuillez saisir votre numéro de téléphone</span>
+    </div>
+  
+    <form [formGroup]="form">
+      <div class="input-content">
+        <ion-icon name="person"></ion-icon>
+        <ion-input type="text" placeholder="77 123 45 67" simpleMask="99 999 99 99" [clearIfNotMatch]="true" formControlName="telephone"></ion-input>
+      </div>
+      <button (click)="onSubmit()">Envoyer</button>
+      <span class="text-fin">Vous avez dèjà un compte? <a routerLink="">Se connecter</a></span>
+    </form>
+  </div>
+</ion-content>

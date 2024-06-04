@@ -1,0 +1,80 @@
+
+
+<ion-content >
+  <div class="content">
+  <form >
+    <!--<div class="info-top">
+      <h1>Inscription</h1>
+    </div>-->
+     <div class="profil">
+      <img width="100" height="100"  [src]="base64" alt="">
+      <div class="icon-click" (click)="pickImageFromGallery()">
+          <ion-icon name="camera"></ion-icon>
+      </div>
+    </div>
+    
+    <div class="col-2">
+      <div class="my-content">
+        <ion-input type="text" placeholder="Prénom" ></ion-input>
+      </div>
+      <div class="my-content">
+        <ion-input type="text" placeholder="Nom" ></ion-input>
+      </div>
+    </div>
+    
+      <div class="col-2">
+        <div class="my-content">
+          <ion-input type="text" placeholder="date naissance" ></ion-input>
+        </div>
+        <div class="my-content">
+          <ion-input type="text" placeholder="Lieu de naissance" ></ion-input>
+        </div>
+    </div>
+  
+    <div class="my-content">
+      <ion-input type="text" placeholder="Numéro CNI" ></ion-input>
+    </div>
+    
+    <div class="my-content">
+      <ion-select interface="action-sheet" placeholder="Région">
+        <ion-select-option value="apples">Dakar</ion-select-option>
+        <ion-select-option value="oranges">Thiès</ion-select-option>
+        <ion-select-option value="bananas">Diourbel</ion-select-option>
+      </ion-select>
+    </div>
+    <div class="my-content">
+      <ion-select interface="action-sheet" placeholder="Département">
+        <ion-select-option value="apples">Mbour</ion-select-option>
+        <ion-select-option value="oranges">Thiès</ion-select-option>
+        <ion-select-option value="bananas">Tivaouane</ion-select-option>
+      </ion-select>
+    </div>
+    <div class="my-content">
+      <ion-select interface="action-sheet" placeholder="Commnune">
+        <ion-select-option value="apples">Khombole</ion-select-option>
+        <ion-select-option value="oranges">Thiès</ion-select-option>
+        <ion-select-option value="bananas">Diourbel</ion-select-option>
+      </ion-select>
+    </div>
+
+    <div class="my-content">
+      <ion-input type="text" placeholder="Lieu de vote" ></ion-input>
+    </div>  
+    <div class="col-2">
+      <div class="my-content">
+        <ion-input type="password" placeholder="Mot de passe" ></ion-input>
+      </div>
+      <div class="my-content">
+        <ion-input type="password" placeholder="Confirmer mot de passe" ></ion-input>
+      </div>
+    </div>
+    <button  type="submit">
+      Enregistrer
+      
+    </button>
+    <br>
+    
+  </form>
+</div>
+  
+</ion-content>

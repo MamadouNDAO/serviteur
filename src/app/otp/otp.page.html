@@ -1,0 +1,25 @@
+
+<ion-content fullscreen="true">
+  <div class="fully">
+    <ion-icon class="icon-back" name="arrow-back"></ion-icon>
+    <div class="content-logo">
+      <img src="../../assets/serviteur-logo.png" alt="logo-vpe" srcset="">
+    </div>
+    <div class="text-start">
+      <h1> <strong></strong></h1>
+      <br>
+      <span>Veuillez saisir votre code OTP</span>
+    </div>
+
+    <form [formGroup]="form">
+      <div class="input-content">
+        <ng-otp-input  [config]="{length:5,allowNumbersOnly:true, inputStyles:{'width':'40px', 'height':'40px', 'color':'#2196f3', 'background': '#fff'}}"></ng-otp-input>
+      </div>
+      <button>
+        <a routerLink="/inscription">Vérifier</a>
+      </button>
+      <span *ngIf="!hidevalue" class="timer">00:{{maxTime}}</span>
+      <span *ngIf="hidevalue" class="text-fin" (click)="reSend()">Vous n'avez pas reçu le code? <strong >Renvoyer</strong></span>
+    </form>
+  </div>
+</ion-content>

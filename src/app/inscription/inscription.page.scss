@@ -1,0 +1,190 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    background: #fff;
+    /*background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );*/
+}
+.top{
+    width: 100px;
+    height: 100px;
+    margin-top: -10px;
+
+    img{
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        object-position: center;
+  }
+}
+
+.text-prez{
+    width: 80%;
+    margin-top: 0px;
+    h2{
+        color: var(--blue-primary);
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+    }
+    span{
+      font-size: 14px;
+      font-family: 'Roboto', sans-serif;
+      color: #555;
+    }
+}
+
+form{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: none;
+    padding: 10px;
+    position: relative;
+    top: 0px;
+
+    .info-top{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+        h1{
+            margin: auto;
+            color: var(--blue-primary);
+        }
+    }
+
+    .col-2{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: space-between;
+        ion-input{
+            width: 100%
+        }
+    }
+}
+ion-button{
+    width: 100%;
+    margin: auto;
+    background: #19b5f0 !important;
+    color: #fff !important;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
+ion-item{
+    border: solid 1px rgb(152, 152, 152) !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.my-content{
+
+    /*display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-left: 10px;
+    gap:0px;*/
+
+    width: 100;
+    ion-label{
+        font-size: 14px;
+        color: var(--blue-primary);
+    }
+    ion-input, ion-select{
+        border: solid 1px var(--color-grey);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        width: 100%;
+        color: var(--color-dark);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+    label{
+        font-size: 11px;
+        color: var(--color-dark)
+    }
+    ion-input::placeholder{
+      color: #fff;
+      font-size: 11px;
+    }
+    ion-icon{
+      color: var(--blue-primary);
+      font-size: 20px;
+    }
+
+    ion-input:focus{
+      outline: none;
+    }
+}
+
+
+.text-member{
+  position: relative;
+  font-size: 12px;
+  float: right;
+  left: 25px;
+  top: 20px;
+}
+
+.profil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    .icon-click{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: #19b5f0;
+        color: #fff;
+        top: -30px;
+        left: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+}
+
+.profil > img{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border: solid 2px #19b5f0;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
